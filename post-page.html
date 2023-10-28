@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            scroll-padding-top: 2rem;
+            box-sizing: border-box;
+        }
+        :root{
+            --container-color: #1a1e21;
+            --second-color: #fd8f44;
+            --text-color: #172317;
+            --bg-color: #fff;
+        }
+        ::selection{
+            color: var(--bg-color);
+            background: var(--second-color);
+        }
+        a{
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+        }
+        img{
+            width: 100%;
+        }
+        section{
+            padding: 3rem 0 2rem;
+        }
+        .container{
+            max-width: 1068px;
+            margin: auto;
+            width: 100%;
+        }
+        header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 200;
+        }
+        header.shadow{
+            background: var(--bg-color);
+            box-shadow: 0 1px 4px hsl(0 4% 14% / 10%);
+            transition: 0.4s;
+        }
+        header.shadow .logo{
+            color: var(--text-color);
+        }
+        .nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 0;
+        }
+        .logo{
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--bg-color);
+        }
+        .logo span{
+            color: var(--second-color);
+        }
+        .login{
+            padding: 8px 14px;
+            text-transform: uppercase;
+            font-weight: 500;
+            border-radius: 4px;
+            background: var(--second-color);
+            color: var(--bg-color);
+        }
+        .login:hover{
+            background: hsl(14,98%,58%);
+            transition: 0.3s;
+        }
+        .footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0;
+        }
+        .footer p{
+            font-size: 0.938rem;
+        }
+        .social{
+            display: flex;
+            align-items: center;
+            column-gap: 1rem;
+        }
+        .social .fab{
+            font-size: 1.4rem;
+            color: var(--text-color);
+        }
+        .social .fab:hover{
+            color: var(--second-color);
+            transition: 0.3s all linear;
+        }
+        .post-header{
+            width: 100%;
+            height: 500px;
+            background: var(--container-color);
+        }
+        .post-container{
+            max-width: 800px;
+            margin: auto;
+            width: 100%;
+        }
+        .header-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 4rem !important;
+        }
+        .back-home{
+            color: var(--second-color);
+            font-size: 0.9rem;
+        }
+        .header-title{
+            width: 90%;
+            font-size: 2.6rem;
+            color: var(--bg-color);
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .header-img{
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            object-position: center;
+        }
+        .post-content{
+            margin-top: 10rem !important;
+        }
+        .sub-heading{
+            font-size: 1.2rem;
+        }
+        .post-text{
+            font-size: 1rem;
+            line-height: 1.7rem;
+            margin: 1rem 0;
+            text-align: justify;
+        }
+        .share{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 1rem;
+        }
+        .share-title{
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+        <a href="index.html" class="logo">My <span>Blog</span></a>
+        <a href="#" class="login">Login</a>
+        </div>
+    </header>
+
+    <section class="post-header">
+        <div class="header-content post-container">
+            <a href="index.html" class="back-home">Back To Home</a>
+            <h1 class="header-title">How To Create Best UX Design With Adobe XD</h1>
+            <img src="blog/post-1.jpg" alt="" class="header-img">
+        </div>
+    </section>
+
+    <section class="post-content post-container">
+        <h2 class="sub-heading">Create Best UX Design</h2>
+        <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet similique doloremque aliquid odio quisquam magni laudantium illum at corrupti. Numquam velit impedit omnis perferendis mollitia facere nulla odio optio quaerat.</p>
+        <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet similique doloremque aliquid odio quisquam magni laudantium illum at corrupti. Numquam velit impedit omnis perferendis mollitia facere nulla odio optio quaerat.</p>
+        <h2 class="sub-heading">Create Best UX Design</h2>
+        <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet similique doloremque aliquid odio quisquam magni laudantium illum at corrupti. Numquam velit impedit omnis perferendis mollitia facere nulla odio optio quaerat.</p>
+        <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet similique doloremque aliquid odio quisquam magni laudantium illum at corrupti. Numquam velit impedit omnis perferendis mollitia facere nulla odio optio quaerat.</p>
+        <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet similique doloremque aliquid odio quisquam magni laudantium illum at corrupti. Numquam velit impedit omnis perferendis mollitia facere nulla odio optio quaerat.</p>
+    </section>
+
+    <div class="share post-container">
+        <span class="share-title">Share This Article</span>
+        <div class="social">
+            <a href="#"><i class='fab fa-facebook'></i></a>
+            <a href="#"><i class='fab fa-twitter'></i></a>
+            <a href="#"><i class='fab fa-instagram'></i></a>
+            <a href="#"><i class='fab fa-linkedin'></i></a>
+        </div>
+    </div>
+
+    <div class="footer container">
+        <p>&copy; My Blogs. All Right Reserved</p>
+        <div class="social">
+            <a href="#"><i class='fab fa-facebook'></i></a>
+            <a href="#"><i class='fab fa-twitter'></i></a>
+            <a href="#"><i class='fab fa-instagram'></i></a>
+            <a href="#"><i class='fab fa-linkedin'></i></a>
+        </div>
+    </div>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.filter-item').click(function(){
+                $(this).addClass("active-filter").siblings().removeClass("active-filter");
+            });
+        });
+
+        let header = document.querySelector('header')
+        
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('shadow', window.scrollY > 0);
+        });
+    </script>
+</body>
+</html>

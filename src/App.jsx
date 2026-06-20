@@ -6,7 +6,7 @@ import ScrollToTop from "./pages/ScrollToTop";
 
 function App() {
   return (
-    <Router basename="/blog.github.io">
+    <Router>
       <ScrollToTop />
       <Header />
       <Routes>

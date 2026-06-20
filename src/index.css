@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/* Tailwind v4 mein class-based dark mode active karne ka sahi tareeka */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Base styling to prevent abrupt dark/light jumps across the app */
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    @apply transition-colors duration-300 ease-in-out;
+  }
+}
+
+/* Keyframe for a premium and smooth fade-in motion graphics look */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom animation utility for category filters and cards */
+.animate-fadeIn {
+  animation: fadeIn 0.45s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  will-change: transform, opacity;
+}
